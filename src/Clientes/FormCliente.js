@@ -110,7 +110,7 @@ function FormCliente() {
                 </div>
 
                 <div className="Contenido_Clientes_cuadros">
-                  <label htmlFor="Cliente"> Cliente </label>
+                  <label htmlFor="Cliente"> Nombre cliente</label>
                   <input
                     id="nombre_Clientes"
                     type="text"
@@ -123,7 +123,7 @@ function FormCliente() {
 
               <div className="Contenido_Clientes_div">
                 <div className="Contenido_Clientes_cuadros">
-                  <label htmlFor="Direccion"> direccion </label>
+                  <label htmlFor="Direccion"> Dirección </label>
                   <input
                     type="text"
                     id="direccion_Clientes"

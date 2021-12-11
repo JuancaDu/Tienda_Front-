@@ -6,7 +6,7 @@ import Swal from "sweetalert2";
 import withReactContent from "sweetalert2-react-content";
 
 function Factura() {
-  const [infoFacturas, modificarInfoFacturas] = useState([]); //useState sirve para renderizar al notar un cambio
+  const [infoFacturas, modificarInfoFacturas] = useState([]); 
   const navigate = useNavigate();
   const MySwal = withReactContent(Swal);
 
@@ -94,15 +94,15 @@ function Factura() {
         <div className="anchoMenu">
           <div className="FacturaTabla">
             <div className="FacturaTitulo">
-              <h1>Facturas</h1>
+              <h1>Vetas</h1>
             </div>
 
             <table className="FacturaTablaAncho table table-striped mx-auto">
               <thead>
                 <tr>
                   <th>Codigo</th>
-                  <th>cedula_cliente</th>
-                  <th>cedula_usuario</th>
+                  <th>cedula Cliente</th>
+                  <th>cedula usuario</th>
                   <th>nombre_Cliente</th>
                   <th>Iva</th>
                   <th>Total</th>

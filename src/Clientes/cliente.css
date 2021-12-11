@@ -35,6 +35,7 @@ color: white;
 }
 
 .Contenido_Clientes_cuadros {
+	margin-top: 40px;
 	padding-bottom: 35px;
 	width: 35vw;
 	display: flex;

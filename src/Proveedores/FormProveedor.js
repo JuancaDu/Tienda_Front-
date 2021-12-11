@@ -15,7 +15,7 @@ function FormProveedor() {
 
   const InicializarForm = async () => {
     // validar si hay algo en el parametro cedula
-    if (params.cedula) {
+    if (params.nit) {
       // hacer un get por cedula para traer los datos
       // despues de tener los datos asociales a los input los datos correspondientes
       const response = await fetch(
@@ -110,7 +110,7 @@ function FormProveedor() {
                 </div>
 
                 <div className="Contenido_Clientes_cuadros">
-                  <label htmlFor="Proveedor"> nombre_Proveedor </label>
+                  <label htmlFor="Proveedor"> Nombre proveedor </label>
                   <input
                     id="nombre_Proveedores"
                     type="text"
@@ -123,7 +123,7 @@ function FormProveedor() {
 
               <div className="Contenido_Proveedores_div">
                 <div className="Contenido_Proveedores_cuadros">
-                  <label htmlFor="Direccion"> direccion </label>
+                  <label htmlFor="Direccion"> Dirección </label>
                   <input
                     type="text"
                     id="direccion_Proveedores"

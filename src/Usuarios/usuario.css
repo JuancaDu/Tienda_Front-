@@ -43,6 +43,7 @@ color: white;
 }
 
 .Contenido_Usuarios_cuadros input {
+
 	width: 15vw;
 	height: 4vh;
 	font-size: 16px;
@@ -70,6 +71,8 @@ color: white;
 .UsuarioTablaAncho{
     width: 85%;
 	margin-top: 40px;
+	background-color: rgba(255, 255, 255, 0.76);
+	
 }
 
 .marginButtonUsuario{

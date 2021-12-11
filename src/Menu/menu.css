@@ -44,7 +44,7 @@
 	color: rgb(3, 3, 3);
 }
 /*fondo general */
-body {
+.menu_body {
 	font-family: Arial;
 	margin: 0;
 	background: radial-gradient(rgb(202, 201, 201), rgb(180, 180, 171), rgb(54, 54, 54));

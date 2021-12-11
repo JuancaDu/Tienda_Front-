@@ -1,7 +1,6 @@
 import "./login.css";
 import {useNavigate} from 'react-router-dom';
 
-
 function Login() {
   const navigate = useNavigate();
   const iniciarSesion = async (e) => {
@@ -11,10 +10,10 @@ function Login() {
     
     const usuarioCompleto = {
       usuario: nombreUsuario,
-      clave_Usuario: claveUsuario, // usuario, clave_Usuario son las variables del modelo en eclipse mismo nombre
+      clave_Usuario: claveUsuario, 
     };
     const response = await fetch("http://localhost:8080/validar", {
-      //aqui envia la inf
+      
       method: "POST", // *GET, POST, PUT, DELETE, etc.
       mode: "cors", // no-cors, *cors, same-origin
       headers: {

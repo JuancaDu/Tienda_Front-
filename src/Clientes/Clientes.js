@@ -98,10 +98,10 @@ function Cliente() {
             <table className="ClienteTablaAncho table table-striped mx-auto">
               <thead>
                 <tr>
-                  <th>ID</th>
+                  <th>Cedula</th>
                   <th>Nombres</th>
                   <th>Correo</th>
-                  <th>Direccion</th>
+                  <th>Dirección</th>
                   <th>Telefono</th>
                   <th>Acciones</th>
                 </tr>

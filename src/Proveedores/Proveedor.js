@@ -100,7 +100,7 @@ function Proveedor() {
                 <tr>
                   <th>Nit</th>
                   <th>Ciudad</th>
-                  <th>Direccion</th>
+                  <th>Dirección</th>
                   <th>Nombre</th>
                   <th>Telefono</th>
                   <th>Acciones</th>

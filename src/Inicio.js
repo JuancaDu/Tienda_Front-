@@ -91,12 +91,12 @@ function Inicio() {
                 </p>
               </div>
               <div className="card-footer bg-transparent border-white">
-                <a href="https://github.com/JuancaDu/Tienda_Back.git" target="blank" className="btn btn-primary">
+                <a href="https://github.com/JuancaDu/Tienda_back.git" target="blank" className="btn btn-primary">
                   Ir al repo Back
                 </a>
               </div>
               <div className="card-footer bg-transparent border-white">
-                <a href="https://github.com/JuancaDu/Tienda_Front.git" target="blank" className="btn btn-primary">
+                <a href="https://github.com/JuancaDu/Tienda_Front-.git" target="blank" className="btn btn-primary">
                   Ir al repo Front
                 </a>
               </div>
@@ -112,9 +112,10 @@ function Inicio() {
               />
               <div className="card-body">
                 <h5 className="card-title">
-                  <strong>Equipo #</strong>
+                  <strong>Equipo 14</strong>
                 </h5>
                 <h5>Juan Carlos Dueñas Castro</h5>
+                <h5>Carolina Galeano Monsalve</h5>
               </div>
             </div>
           </div>

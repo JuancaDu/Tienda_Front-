@@ -4,21 +4,12 @@ function Menu() {
     <div className="menu_Contenedor_Menu">
       
        <a href="/Inicio" className="bi-house">Inicio </a>
-        <a href="/Usuario" className="bi-people ">Usuarios </a>
+        <a href="/Usuario" className="bi-person-check">Usuarios </a>
         <a href="/Cliente" className="bi-people ">Clientes </a>
-        <a href="/Proveedor" className="bi-people ">Proveedores </a>
-        <a href="/Producto" className="bi-people ">Productos </a>
-        <a href="/Factura" className="bi-people ">Facturas </a>
-        <button class="dropdown-btn">Reportes<i class="fa fa-caret-down"></i>
-        </button>
-        <div class="dropdown-container">
-          <a href="Usuario">Usuarios</a><br></br><br></br>
-          <a href="Cliente">Clientes</a><br></br><br></br>
-          <a href="Proveedor">Proveedores</a><br></br><br></br>
-          <a href="Producto">Productos</a><br></br><br></br>
-          <a href="Factura">Facturas</a><br></br><br></br>
-        </div>
-				     
+        <a href="/Proveedor" className="bi-truck ">Proveedores </a>
+        <a href="/Producto" className="bi-cart4 ">Productos </a>
+        <a href="/Factura" className="bi-receipt ">Ventas </a>
+        <a href="/Factura" className="bi-journal-check ">Reportes </a>
         <a href="/" className="bi-door-closed">Cerrar Sesion </a>
       </div>
   );
