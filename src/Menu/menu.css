@@ -1,0 +1,177 @@
+.login_Contenedor {
+	/*margin: 0 auto;
+	background: linear-gradient(to bottom, rgba(179, 220, 237, 1) 0%,
+		rgb(72, 73, 73) 51%, rgb(75, 76, 77) 72%,
+		rgba(188, 224, 238, 1) 120%);
+	/* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	/*height: 100vh;*/
+	background: rgb(37, 214, 90);
+}
+
+.menu_Contenedor {
+	width: 14vw;
+	display: flex;
+	flex-direction: column;
+}
+
+.menu_Contenedor_Titulo {
+	height: 15vh;
+	display: flex;
+	align-items: center;
+	
+	
+}
+
+.menu_Contenedor_Titulo h1 {
+	margin: 0px;
+	padding: 10px;
+	font-size: 25px;	
+	color: rgb(33, 21, 195);
+}
+/*menu lateral*/
+.menu_Contenedor_Menu {
+	display: flex;
+	flex-direction: column;
+	font-size: 17px;
+	background-color: rgba(198, 201, 226, 0.822);
+	height: 100vh;
+}
+/*letra del menu lateral*/
+.menu_Contenedor_Menu a {
+	padding: 10px;
+	cursor: pointer;
+	text-decoration: none;
+	color: rgb(3, 3, 3);
+}
+/*fondo general */
+body {
+	font-family: Arial;
+	margin: 0;
+	background: radial-gradient(rgb(202, 201, 201), rgb(180, 180, 171), rgb(54, 54, 54));
+}
+
+
+
+.login_Bienvenidos {
+	width: 100vw;
+	height: 40vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	
+}
+
+.login_Bienvenidos_Titulo {
+	font-size: 7vw;
+	margin-bottom: 0px;
+}
+
+.login_Datos {
+	padding-top: 10px;
+	width: 100vw;
+	height: 55vh;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: flex-start;
+}
+
+.login_Datos_Formulario {
+	padding: 10px;
+	padding-top: 30px;
+	width: 35vw;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	font-size: 2.5vw;
+	
+}
+
+.login_Datos_Formulario label {
+	width: 35%;
+	font-size: 2.3vw;
+}
+
+.login_Datos_Formulario input {
+	width: 20vw;
+	height: 5vh;
+	border-radius: 10px;
+	font-size: 1.3vw;
+	padding-left: 10px;
+}
+
+.login_Datos_Botones {
+	margin-top: 30px;
+	width: 35vw;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.login_Datos_Botones button {
+	font-size: 1.5vw;
+	border-radius: 10px;
+	width: 10vw;
+	height: 5vh;
+}
+
+.BordeTexto {
+	-webkit-text-stroke: 1px rgb(250, 249, 249);
+}
+
+
+.AnchoTabla {
+	width: 90vw !important;
+}
+
+
+/* Style the sidenav links and the dropdown button */
+.sidenav a, .dropdown-btn {
+	padding: 6px 8px 6px 16px;
+	text-decoration: none;
+	font-size: 20px;
+	color: #818181;
+	display: active;
+	border: none;
+	background: none;
+	width:100%;
+	text-align: left;
+	cursor: pointer;
+	outline: none;
+  }
+  
+  /* On mouse-over */
+  .sidenav a:hover, .dropdown-btn:hover {
+	color: #f1f1f1;
+  }
+  
+  /* Main content */
+  .main {
+	margin-left: 200px; /* Same as the width of the sidenav */
+	font-size: 20px; /* Increased text to enable scrolling */
+	padding: 0px 10px;
+  }
+  
+  /* Add an active class to the active dropdown button */
+  .active {
+	background-color: green;
+	color: white;
+  }
+  
+  /* Dropdown container (hidden by default). Optional: add a lighter background color and some left padding to change the design of the dropdown content */
+  .dropdown-container {
+	display: block;
+	background-color: rgba(198, 201, 226, 0.822);
+	padding-left: 8px;
+  }
+  
+  /* Optional: Style the caret down icon */
+  .fa-caret-down {
+	float: right;
+	padding-right: 8px;
+  }
+
+
+
+
+

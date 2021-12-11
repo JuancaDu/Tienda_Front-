@@ -1,0 +1,77 @@
+.flex{
+	display: flex !important;
+}
+
+.anchoMenu{
+	width: 86vw;
+}
+
+.FacturaTitulo{
+    height: 100px;
+	width: 90vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+	background-color: rgb(24, 23, 23);
+	
+}
+.FacturaTitulo h1{
+color: white;
+}
+
+.Contenido_Facturas {
+	margin-top: 65px;
+	margin-bottom: 50px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	align-items: center;
+}
+
+.Contenido_Facturas_div {
+	width: 70%;
+	display: flex;
+	flex-direction: row;
+}
+
+.Contenido_Facturas_cuadros {
+	padding-bottom: 35px;
+	width: 35vw;
+	display: flex;
+	align-items: center;
+	font-size: 20px
+}
+
+.Contenido_Facturas_cuadros input {
+	width: 15vw;
+	height: 4vh;
+	font-size: 16px;
+	padding-left: 10px;
+}
+
+.Contenido_Facturas_cuadros label {
+	width: 13vw;
+	padding-left: 15px;
+}
+
+.botones_Facturas {
+	
+	display: flex;
+	justify-content: space-around;
+}
+
+
+.botones_Facturas_conte button {
+	
+	font-size: 15px;
+}
+
+
+.FacturaTablaAncho{
+    width: 85%;
+	margin-top: 40px;
+}
+
+.marginButtonFactura{
+	margin-right: 20px;
+}
