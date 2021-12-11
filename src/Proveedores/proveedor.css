@@ -69,6 +69,7 @@ color: rgb(253, 249, 249);
 
 
 .ProveedorTablaAncho{
+	background-color: rgba(255, 255, 255, 0.76);
     width: 85%;
 	margin-top: 40px;
 }

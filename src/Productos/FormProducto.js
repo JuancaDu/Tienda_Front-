@@ -102,6 +102,7 @@ function FormProducto() {
             </div>
             <div className="Contenido_Productos">
               <div className="Contenido_Producto_div">
+              <div className="Contenido_Productos_div">
                 <div className="Contenido_Productos_cuadros">
                   <label htmlFor="Código"> Código </label>
                   <input
@@ -114,7 +115,7 @@ function FormProducto() {
                 </div>
 
                 <div className="Contenido_Productos_cuadros">
-                  <label htmlFor="Nombre_Producto"> Nombre Producto </label>
+                  <label htmlFor="Nombre_Producto"> Descripcion Producto </label>
                   <input
                     id="nombre_Productos"
                     type="text"
@@ -124,6 +125,8 @@ function FormProducto() {
                   <br />
                 </div>
 
+              </div>
+              
               <div className="Contenido_Productos_div">
                 <div className="Contenido_Productos_cuadros">
                   <label htmlFor="Nit_Proveedor"> Nit del Proveedor </label>
@@ -147,7 +150,7 @@ function FormProducto() {
                   <br />
                 </div>
               </div>
-
+              
               <div className="Contenido_Productos_div">
                 <div className="Contenido_Productos_cuadros">
                   <label htmlFor="Iva_Producto"> Iva del producto</label>
@@ -159,7 +162,7 @@ function FormProducto() {
                   />
                   <br />
                 </div>
-              </div>
+              
 
               <div className="Contenido_Productos_cuadros">
                   <label htmlFor="Precio_Venta_Productos"> Precio de venta </label>
@@ -171,6 +174,7 @@ function FormProducto() {
                   />
                   <br />
                 </div>
+              </div>
               </div>
             </div>
 

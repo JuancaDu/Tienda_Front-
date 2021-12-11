@@ -100,7 +100,7 @@ function Producto() {
               <thead>
                 <tr>
                   <th>Código</th>
-                  <th>Nombre Producto</th>
+                  <th>Descripcion Producto</th>
                   <th>NIT Proveedor</th>
                   <th>Precio Compra</th>
                   <th>IVA producto</th>
