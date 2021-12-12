@@ -221,7 +221,7 @@ function FormFactura() {
                   onClick={crearNuevaFactura}
                 >
                   Guardar
-  </button>
+                </button>
               </div>
             </div>
           </form>
