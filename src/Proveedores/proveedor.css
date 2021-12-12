@@ -30,12 +30,14 @@ color: rgb(253, 249, 249);
 }
 
 .Contenido_Proveedores_div {
+	margin-top: 15px;
 	width: 70%;
 	display: flex;
 	flex-direction: row;
 }
 
 .Contenido_Proveedores_cuadros {
+	margin-top: 15px;
 	padding-bottom: 35px;
 	width: 35vw;
 	display: flex;
@@ -44,6 +46,7 @@ color: rgb(253, 249, 249);
 }
 
 .Contenido_Proveedores_cuadros input {
+	margin-top: 15px;
 	width: 15vw;
 	height: 4vh;
 	font-size: 16px;

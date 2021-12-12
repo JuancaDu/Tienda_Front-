@@ -14,19 +14,19 @@ function FormFactura() {
   let params = useParams(); // captura parameetros de la url { cedula }
 
   const InicializarForm = async () => {
-    // validar si hay algo en el parametro cedula
+    
     if (params.codigo) {
-      // hacer un get por cedula para traer los datos
-      // despues de tener los datos asociales a los input los datos correspondientes
+      
       const response = await fetch(
         "http://localhost:8080/Factura/" + params.codigo
       );
       const data = await response.json();
       console.log(data);
       document.getElementById("codigo_Vta").value = data.codigo_Vta;
-      document.getElementById("cedula_Usu_Vta").value = data.cedula_Usu_Vta;
       document.getElementById("cedula_Cli_Vta").value = data.cedula_Cli_Vta;
       document.getElementById("nombre_Cli_Vta").value = data.nombre_Cli_Vta;
+      document.getElementById("cod_Producto").value= data.cod_Producto;
+      document.getElementById("cantidad").value= data.cantidad;
       document.getElementById("valor_Vta").value = data.valor_Vta;
       document.getElementById("valor_IVA").value = data.valor_IVA;
       document.getElementById("valor_Total").value = data.valor_Total;
@@ -41,27 +41,30 @@ function FormFactura() {
     e.preventDefault();
 
     const codigoVta = document.getElementById("codigo_Vta").value;
-    const cedulaUsuVta = document.getElementById("cedula_Usu_Vta").value;
     const cedulaCliVta = document.getElementById("cedula_Cli_Vta").value;
     const nombreCliVta = document.getElementById("nombre_Cli_Vta").value;
+    const codProducto= document.getElementById("cod_Producto").value;
+    const cant= document.getElementById("cantidad").value;
     const valorVta = document.getElementById("valor_Vta").value;
     const valorIVA = document.getElementById("valor_IVA").value;
     const valorTotal = document.getElementById("valor_Total").value;
 
     if (
       codigoVta &&
-      cedulaUsuVta &&
       cedulaCliVta &&
       nombreCliVta &&
+      codProducto&&
+      cant&&
       valorVta &&
       valorIVA &&
       valorTotal
     ) {
       const facturaCompleto = {
         codigo_Vta: codigoVta,
-        cedula_Usu_Vta: cedulaUsuVta,
         cedula_Cli_Vta: cedulaCliVta,
         nombre_Cli_Vta: nombreCliVta,
+        cod_Producto: codProducto,
+        cantidad: cant,
         valor_Vta: valorVta,
         valor_IVA: valorIVA,
         valor_Total: valorTotal,
@@ -107,7 +110,7 @@ function FormFactura() {
             <div className="Contenido_Facturas">
               <div className="Contenido_Facturas_div">
                 <div className="Contenido_Facturas_cuadros">
-                  <label htmlFor="Codigo"> Codigo </label>
+                  <label htmlFor="Codigo"> Codigo Factura </label>
                   <input
                     id="codigo_Vta"
                     type="text"
@@ -118,20 +121,7 @@ function FormFactura() {
                 </div>
 
                 <div className="Contenido_Facturas_cuadros">
-                  <label htmlFor="cedula_Usu_Vta"> cedula_Usu_Vta </label>
-                  <input
-                    id="cedula_Usu_Vta"
-                    type="text"
-                    name="cedula_Usu_Vta"
-                    placeholder="Digite cedula del usuario"
-                  />
-                  <br />
-                </div>
-              </div>
-
-              <div className="Contenido_Facturas_div">
-                <div className="Contenido_Facturas_cuadros">
-                  <label htmlFor="cedula_Cli_Vta"> cedula_Cli_Vta </label>
+                  <label htmlFor="cedula_Cli_Vta"> Cedula cliente </label>
                   <input
                     type="text"
                     id="cedula_Cli_Vta"
@@ -141,8 +131,11 @@ function FormFactura() {
                   <br />
                 </div>
 
+                </div>
+
+                <div className="Contenido_Facturas_div">
                 <div className="Contenido_Facturas_cuadros">
-                  <label htmlFor="nombre_Cli_Vta"> nombre_Cli_Vta </label>
+                  <label htmlFor="nombre_Cli_Vta"> Nombre cliente </label>
                   <input
                     type="text"
                     id="nombre_Cli_Vta"
@@ -151,21 +144,49 @@ function FormFactura() {
                   />
                   <br />
                 </div>
+
+                <div className="Contenido_Facturas_cuadros">
+                  <label htmlFor="cod_Producto"> Codigo producto </label>
+                  <input
+                    type="text"
+                    id="cod_Producto"
+                    name="cod_Producto"
+                    placeholder="Digite el codigo del producto"
+                  />
+                  <br />
+                </div>
+                
                 </div>
 
               <div className="Contenido_Facturas_div">
+              <div className="Contenido_Facturas_cuadros">
+                  <label htmlFor="Cantidad">Cantidad</label>
+                  <input
+                    type="text"
+                    id="Cantidad"
+                    name="Cantidad"
+                    placeholder="Digite la cantidad comprada"
+                  />
+                  <br />
+                </div>
+
                 <div className="Contenido_Facturas_cuadros">
-                  <label htmlFor="valor_Vta">valor_Vta</label>
+                  <label htmlFor="valor_Vta">valor producto</label>
                   <input
                     type="text"
                     id="valor_Vta"
                     name="valor_Vta"
-                    placeholder="Digite el valor de la venta"
+                    placeholder="Digite el valor del producto"
                   />
                   <br />
                 </div>
+                
+                </div>
+                
+
+                <div className="Contenido_Facturas_div">
                 <div className="Contenido_Facturas_cuadros">
-                  <label htmlFor="valor_IVA"> valor_IVA </label>
+                  <label htmlFor="valor_IVA"> Valor IVA </label>
                   <input
                     type="text"
                     id="valor_IVA"
@@ -174,10 +195,9 @@ function FormFactura() {
                   />
                   <br />
                 </div>
-                </div>
-                <div className="Contenido_Facturas_div">
+                
                 <div className="Contenido_Facturas_cuadros">
-                  <label htmlFor="valor_Total">valor_Total</label>
+                  <label htmlFor="valor_Total">valor Total</label>
                   <input
                     type="text"
                     id="valor_Total"
@@ -187,7 +207,9 @@ function FormFactura() {
                   <br />
                 </div>
                 </div>
-              </div>
+                </div>
+              
+              
         
 
             <div className="botones_Facturas">

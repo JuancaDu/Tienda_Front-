@@ -48,7 +48,7 @@ function Factura() {
         const respuesta = await response.json();
         if (respuesta) {
           const foundFactura = infoFacturas.filter(
-            (element) => element.codido_Vta !== codigo
+            (element) => element.codido_Vta != codigo
           );
           modificarInfoFacturas(foundFactura);
         }
@@ -67,17 +67,18 @@ function Factura() {
     return infoFacturas.map((element) => (
       <tr key={element.codigo_Vta}>
         <td> {element.codigo_Vta} </td>
-        <td> {element.cedula_Usu_Vta} </td>
         <td> {element.cedula_Cli_Vta} </td>
         <td> {element.nombre_Cli_Vta} </td>
+        <td>{element.cod_Producto}</td>
+        <td>{element.cantidad}</td>
         <td> {element.valor_Vta} </td>
         <td> {element.valor_IVA} </td>
         <td> {element.valor_Total} </td>
         <td>
-          {/*<button 
-          className="btn btn-outline-primary btn-sm marginButtonFactura bi bi-pencil-fill"
+          <button 
+          className="btn btn-outline-dark btn-sm marginButtonFactura bi bi-pencil-fill"
           onClick={(e) => redireccionForFactura (element.codigo_Vta) }
-          ></button>*/}
+          ></button>
           <button
             className="btn btn-dark btn-sm marginButtonFactura bi bi-trash "
             onClick={(e) => eliminarFactura(element.codigo_Vta)}
@@ -94,19 +95,20 @@ function Factura() {
         <div className="anchoMenu">
           <div className="FacturaTabla">
             <div className="FacturaTitulo">
-              <h1>Vetas</h1>
+              <h1>Ventas</h1>
             </div>
 
             <table className="FacturaTablaAncho table table-striped mx-auto">
               <thead>
                 <tr>
                   <th>Codigo</th>
-                  <th>cedula Cliente</th>
-                  <th>cedula usuario</th>
-                  <th>nombre_Cliente</th>
+                  <th>Cedula Cliente</th>
+                  <th>Nombre Cliente</th>
+                  <th>Codigo Producto </th>
+                  <th>Cantidad</th>
                   <th>Iva</th>
                   <th>Total</th>
-                  <th>Total_venta</th>
+                  <th>Total Venta</th>
                   <th>Acciones</th>
                 </tr>
               </thead>
